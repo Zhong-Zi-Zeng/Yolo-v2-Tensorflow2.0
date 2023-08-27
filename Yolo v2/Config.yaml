@@ -1,0 +1,59 @@
+# ======= Dataset (COCO or VOC2007) =======
+ANNOTATIONS_DIR: "D:/VOC2007/Annotations"
+IMAGES_DIR: "D:/VOC2007/JPEGImages"
+DATASET: "VOC2007"
+
+
+# ======= Parameter =======
+GRID_SIZE: 13
+BATCH_SIZE: 2
+EPOCH: 2000
+NUM_CLASSES: 20
+LAMBDA_NO_OBJECT: 0.1
+LAMBDA_OBJECT: 5.0
+LAMBDA_COORD: 1.0
+LAMBDA_CLASS: 1.0
+LR: 0.0001
+CONF_THRESHOLD: 0.8
+NMS_IOU_THRESHOLD: 0.5
+NMS_MAX_OUTPUT_SIZE: 5
+
+
+# ======= K-means =======
+K: 4
+MAX_ITER: 400
+
+# ====== Anchor box (VOC 2007)=======
+ANCHOR_BOX:
+  - [ 1.0703238,   1.80658816 ]
+  - [ 2.67871825,  4.7465925 ]
+  - [ 10.41042496,  9.70021039 ]
+  - [ 5.50556305,  7.54100698 ]
+
+
+# ======= SAVE =======
+WEIGHT: './weight/yolo_v2_weight.h5'
+RESULT_DIR: './result'
+
+# ======= Labels (VOC 2007)=======
+LABELS:
+  - 'aeroplane'
+  - 'bicycle'
+  - 'bird'
+  - 'boat'
+  - 'bottle'
+  - 'bus'
+  - 'car'
+  - 'cat'
+  - 'chair'
+  - 'cow'
+  - 'diningtable'
+  - 'dog'
+  - 'horse'
+  - 'motorbike'
+  - 'person'
+  - 'pottedplant'
+  - 'sheep'
+  - 'sofa'
+  - 'train'
+  - 'tvmonitor'
