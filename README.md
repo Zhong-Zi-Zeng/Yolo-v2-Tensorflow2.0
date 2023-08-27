@@ -4,6 +4,11 @@ Implement of yolo-v2
 ## Dataset download
 1. Dowland coco dataset or voc2007 dataset. ([coco](https://cocodataset.org/#download) ,[voc2007](https://pjreddie.com/projects/pascal-voc-dataset-mirror/))
 
+## Modify config file
+    # ======= Dataset (COCO or VOC2007) =======
+    ANNOTATIONS_DIR: "D:/VOC2007/Annotations" (Change to your path)
+    IMAGES_DIR: "D:/VOC2007/JPEGImages" (Change to your path)
+
 ## Training
     python Train.py
 
